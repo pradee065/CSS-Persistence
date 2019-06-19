@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   Enter the age here:  <input type="number" id="age">
+<button onclick="checkAge()">Check Vote</button>
+<p id="voteable"></p>
+   <script>
+   function checkAge(){
+       var elgy = document.getElementById('age').value;
+       var check = (elgy>18) && (elgy<40) ? "he's eligable" : "not eligable";
+       document.getElementById('voteable').innerHTML = check;
+   }
+   </script>
+</body>
+</html>
